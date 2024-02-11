@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Band Name Generator - Result</title>
+  </head>
+  <body>
+    <h1>Your Band Name</h1>
+    {% if band_name_generated %}
+      <p>Your band name could be {{ band_name_generated }}</p>
+    {% else %}
+      <p>Please go back and generate a band name.</p>
+    {% endif %}
+    <a href="/">Generate another band name</a>
+  </body>
+</html>

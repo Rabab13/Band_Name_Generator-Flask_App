@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    color: white; /* Set text color to white for better visibility */
+    font-family: Arial, sans-serif; /* Specify a fallback font */
+    margin: 0;
+    padding: 0;
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+   /* Ensure correct path and image format */
+   background-size: 100% auto; /* Cover the entire screen while maintaining aspect ratio */
+/* Center the image */
+    color: white; /* Set text color for better visibility */
+    font-family: Arial, sans-serif; /* Specify a fallback f:fullscreen; */
+
+}
+
+h1 {
+    /* text-align: center; */
+    font-size: 2em; /* Adjust the font size as needed */
+}
+
+p {
+    /* text-align: center; */
+    font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+a {
+
+    color: yellow; /* Set link color to yellow */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-align: center;
+    text-decoration: underline; /* Add underline on hover */
+}

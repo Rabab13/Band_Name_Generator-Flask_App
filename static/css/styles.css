@@ -1,0 +1,126 @@
+/* Basic styling */
+html {
+  /* Add this block */
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Change this line */
+  display: flex;
+  flex-direction: column;
+}
+.black-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  /* z-index: 999; */
+  opacity: 0.7; /* Adjust opacity as needed */
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 2em; /* Adjust font size based on design preferences */
+  margin-top: 20px;
+  z-index: 999;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 30%; /* Consider responsiveness adjustments for smaller screens */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 40px; /* Adjust padding for user experience */
+  border: 1px solid #ddd; /* Consider alternative border styles if needed */
+  border-radius: 4px; /* Adjust border radius for aesthetics */
+  z-index: 999;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%; /* Ensure consistent width */
+  background-color: #fbf8f8;
+  padding: 10px; /* Adjust padding for optimal text entry */
+  border: 1px solid #fcf7f7; /* Consider alternative border styles if needed */
+  border-radius: 4px; /* Adjust border radius for aesthetics */
+  margin-bottom: 10px; /* Adjust spacing for readability */
+}
+
+button {
+  background-color: #ef0404; /* Consider color accessibility guidelines */
+  color: white;
+  padding: 10px 20px; /* Adjust padding for button size and readability */
+  border: none; /* Use outline or other techniques for focus feedback */
+  border-radius: 4px; /* Adjust border radius for aesthetics */
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8; /* Adjust opacity for hover effect */
+}
+
+/* Consider including a clear comment indicating why this section is commented out,
+   and provide alternative styling if needed or preferred. */
+/* Fancy text inputs styling */
+/*
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 14px;
+  color: gray;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.input-group input[type="text"] {
+  padding: 10px 20px 10px 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  transition: 0.2s ease all;
+}
+
+.input-group input[type="text"]:focus {
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 9px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.input-group input[type="text"]:focus + label {
+  top: -10px;
+  font-size: 12px;
+  color: #4CAF50;
+}
+*/
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 500px) {
+  /* Adjust form width, padding, and other styles for responsiveness */
+  form {
+    width: 100%;
+  }
+}
